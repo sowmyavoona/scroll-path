@@ -1,0 +1,193 @@
+/* === CSS RESET === */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, .levelList, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color:white;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, .levelList, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+a{
+	decoration:none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* === End of CSS RESET === */
+
+body {
+	background-color:#264d73;
+	overflow: hidden;
+}
+
+.header{
+	background-color:#cc2900;
+}
+
+.header a:hover{
+	color: #ff5c33;
+}
+
+.wrapper div {
+	position: absolute;
+}
+
+.levelList {
+	position: fixed;
+	
+}
+
+
+.levelList li {
+	padding:1%;
+	margin-bottom:3%;
+	border : 1px solid white;
+	border-radius: 50%;
+}
+
+.levelList a {
+	decoration:none;
+}
+
+
+.levelList a:hover {
+	color : #ff5c33;
+}
+
+.sp-canvas {
+	display: none;
+}
+
+.arrow {
+	position: relative;
+	display: inline-block;
+}
+
+.question-1 { 
+	width: 800px;
+	text-align: center;
+}
+
+.question-2 {
+	top: 740px;
+	left: 180px;
+	width: 440px;
+	text-align: center;
+}
+
+.question-3 {
+	top: 1510px;
+	left: 430px;
+	width: 400px;
+	text-align: center;
+}
+
+.question-4 {
+	top: 1540px;
+	left: 1600px;
+	width: 400px;
+	text-align: center;
+}
+
+.question-5 {
+	left: 2185px;
+	top: 660px;
+	width: 460px;
+	text-align: center;
+	transform: rotate(-90deg) translateY(2.5em);
+}
+
+.question-5 .upside-down {
+	text-align: center;
+	transform: rotate(180deg) translateY(3em);
+}
+
+.question-6 {
+	left: 2200px;
+	top: -800px;
+	width: 400px;
+	text-align: center;
+	transform: rotate(90deg) translateX(50px);
+}
+
+.question-7 {
+	width: 475px;
+	left: 1100px;
+	top: -950px;
+	text-align: center;
+	transform: rotate(90deg) translateX(50px);
+}
+
+.question-7 .big {
+	font-size: 40px;
+}
+
+.highlight {
+	animation: highlight 0.2s alternate 6 ;
+}
+
+@keyframes highlight {
+	to {
+		background: lightblue;
+	}
+}
+
+.next-round {
+	position: absolute;
+	display: none;
+	text-align: center;
+	left: 490px;
+	top: -700px;
+	width: 475px;
+	font-size: 40px;
+	transform: rotate(90deg) translateX(50px);
+	
+}
+
+form {
+	color: white;
+	font-family: "Terminal Dosis", sans-serif;
+}
+
+input[type=submit] {
+	color: black;
+}
+
+.round-title {
+	color: white;
+	line-height: 40px;
+}
+
+[class*= 'question-'] {
+	z-index: -9;
+}
+
+.levelList {
+	z-index: 9;
+}
+
+.navbar {
+	z-index: 9999;
+}
